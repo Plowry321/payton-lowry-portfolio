@@ -4,6 +4,13 @@ import Navbar from "./components/navbar/Navbar";
 import Project from "./components/project/Project";
 import Skills from "./components/skills/Skills";
 import { Contact } from "./components/contact/Contact";
+import portfolioimg from "./assets/paytonlowry.com.png";
+import songsyncimg from "./assets/songsync.org.png";
+import paytonlowry from "./assets/payton-lowry.png";
+import linkedin from "./assets/linkedin-logo.png";
+import github from "./assets/github-logo.png";
+import resumeimg from "./assets/resume-logo.png";
+import resume from "./assets/Payton-Lowry-Resume.pdf";
 
 const projects = [
   {
@@ -13,7 +20,7 @@ const projects = [
     link: "https://www.songsync.org/",
     techStack: "HTML, CSS, JavaScript, Node.js",
     github: "https://github.com/SongSync-Lyrics/SongSyncCore",
-    image: "src/assets/songsync.org.png"
+    image: portfolioimg
   },
   {
     id: 1,
@@ -22,7 +29,7 @@ const projects = [
     link: "https://www.paytonlowry.com/",
     techStack: "React.js, TypeScript",
     github: "https://github.com/Plowry321/payton-lowry-portfolio",
-    image: "src/assets/paytonlowry.com.png"
+    image: songsyncimg
   }
 ]
 
@@ -47,9 +54,9 @@ function App() {
             <h1 className="developer">Developer</h1>
           </div>
           <ul className="dev-links">
-            <li><a href="https://www.linkedin.com/in/payton-lowry/" target="_blank" className="dev-link"><img src="src/assets/linkedin-logo.png" alt="linkedin logo" className="dev-link-logo" /></a></li>
-            <li><a href="https://github.com/Plowry321" target="_blank" className="dev-link"><img src="src/assets/github-logo.png" alt="linkedin logo" className="dev-link-logo" /></a></li>
-            <li><a href="http://127.0.0.1:5173/src/assets/Payton-Lowry-Resume.pdf" target="_blank" className="dev-link"><img src="src/assets/resume-logo.png" alt="linkedin logo" className="dev-link-logo" /></a></li>
+            <li><a href="https://www.linkedin.com/in/payton-lowry/" target="_blank" className="dev-link"><img src={linkedin} alt="linkedin logo" className="dev-link-logo" /></a></li>
+            <li><a href="https://github.com/Plowry321" target="_blank" className="dev-link"><img src={github} alt="linkedin logo" className="dev-link-logo" /></a></li>
+            <li><a href={resume} target="_blank" className="dev-link"><img src={resumeimg} alt="linkedin logo" className="dev-link-logo" /></a></li>
           </ul>
         </section>
         <section id="about">
@@ -60,7 +67,7 @@ function App() {
               <p>I discovered my love of programming at <b>Ball State University</b>, where I studied Computer Science.</p>
               <p>I love working with <b>React</b> and <b>Node.js</b>, but I also know a variety of laguages/tools to get the job done.</p>
             </div>
-            <img className="about-image" src="src/assets/payton-lowry.png" alt="Payton Lowry" />
+            <img className="about-image" src={paytonlowry} alt="Payton Lowry" />
           </div>
           <h2 className="my-skills">My Skills</h2>
           <Skills />

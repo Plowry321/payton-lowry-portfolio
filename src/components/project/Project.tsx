@@ -1,4 +1,5 @@
 import "./Project.css";
+import githubimg from "../../assets/github-logo.png";
 
 type ProjectProps = {
     id: number
@@ -14,7 +15,7 @@ function Project({ id, title, description, link, techStack, github, image }: Pro
     return (<>
         <article className="project">
             <div className="project-header"><a href={link} target="_blank" className="title">{title} </a>
-                <a href={github} target="_blank" className="github-link"><img src="src/assets/github-logo.png" alt="github logo" className="github-logo" /></a></div>
+                <a href={github} target="_blank" className="github-link"><img src={githubimg} alt="github logo" className="github-logo" /></a></div>
             <h2 style={{ color: "#21A06D" }}>Built With: <span style={{ color: "white" }}>{techStack}</span></h2>
             <p className="description">{description}</p>
             <img src={image} alt={title} className="image" />
