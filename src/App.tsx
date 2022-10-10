@@ -21,7 +21,7 @@ const projects = [
     description: "The very portfolio site you are viewing right now! Built using React.js and TypeScript. Always up to date with my newest projects!",
     link: "https://www.paytonlowry.com/",
     techStack: "React.js, TypeScript",
-    github: "https://github.com/",
+    github: "https://github.com/Plowry321/payton-lowry-portfolio",
     image: "src/assets/paytonlowry.com.png"
   }
 ]
