@@ -1,0 +1,56 @@
+.project {
+    width: 45%;
+    background: #282828;
+    padding: 1em;
+    border-radius: .5em;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .project {
+        width: 90%;
+    }
+}
+
+.title {
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #22cc88;
+    font-weight: 600;
+}
+
+.image {
+    border-radius: .5em;
+    max-height: 35em;
+    transition: all .2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image:hover {
+    transform: scale(1.025);
+}
+
+.ts-icon {
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+}
+
+.description {
+    color: #22cc88;
+}
+
+.project-header {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.github-logo {
+    width: 2.5em;
+    height: 2.5em;
+    filter: invert(62%) sepia(82%) saturate(438%) hue-rotate(102deg) brightness(92%) contrast(83%);
+}
